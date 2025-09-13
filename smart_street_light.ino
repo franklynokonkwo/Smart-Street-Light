@@ -29,7 +29,7 @@ void loop() {
 
   // The core logic: check if it's dark AND if motion is detected
   // For most modules, LOW = DARK. If yours is opposite, change ldrValue == LOW to ldrValue == HIGH
-  if (ldrValue == LOW && pirValue == HIGH) {
+  if (ldrValue == HIGH && pirValue == HIGH) {
     // If both conditions are true, turn the LED ON
     digitalWrite(ledPin, HIGH);
     Serial.println("Street Light: ON");
